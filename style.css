@@ -1,0 +1,79 @@
+
+body {
+	background: linear-gradient(-45deg, #0055ff, #cc5200,#ff33ff );
+	background-size: 2000% 2000%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.dropdown a {
+
+	text-decoration: none;
+	font-family: 'Gruppo', monospace;
+	padding: 20px;
+	font-size: 30px;
+	color:white;
+}
+.dropdown a:hover{
+	transition: 0.6s;
+    color :black;
+}
+.dropdown button {
+	text-decoration: none;
+	font-size: 30px;
+	color:white;
+	text-align: center;
+	font-family: 'Gruppo', monospace;
+	padding: 20px;
+	border :none;
+	background-color: #004080;
+	display: table-column;
+	
+
+}
+.dropdown button:hover {
+  transition: 0.5s;
+  background-color: #0073e6;
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  background-color: #0073e6;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  
+}
+.content p{
+   color: white;
+   font-family: 'Gruppo', monospace;
+   text-decoration: none;
+   font-size: 42px;
+   text-align: center;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.show {display: block;}
